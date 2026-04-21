@@ -19,7 +19,7 @@ import java.util.List;
 public class TableRenderer {
     public static void displayTableMoviesByTitle(MovieResponse movieResponse) {
         Table table = new Table(
-                5, BorderStyle.ASTERISKS, ShownBorders.ALL
+                5, BorderStyle.UNICODE_BOX, ShownBorders.ALL
         );
         CellStyle cellStyle = new CellStyle(CellStyle.HorizontalAlign.CENTER);
         String[] head = {"ID", "TITLE", "Release Date", "Rating", "Trailer"};

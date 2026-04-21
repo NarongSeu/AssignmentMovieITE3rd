@@ -6,6 +6,8 @@ import org.example.service.MovieService;
 import org.example.service.MovieServiceImpl;
 import org.example.utils.TableRenderer;
 
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Scanner;
 
@@ -29,6 +31,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         MovieService movieService = new MovieServiceImpl();
+        System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
 
         printLogo();
         System.out.println("""
